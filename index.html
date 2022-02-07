@@ -11,8 +11,8 @@
   </a>
 
   <div class="user-menu">
-    <form class="search-form">
-      <input type="text" placeholder="Текст поиска" class="search-input" aria-label="Поиск">
+    <form action="https://echo.htmlacademy.ru" method="GET" class="search-form">
+      <input required name="search" type="text" placeholder="Текст поиска" class="search-input" aria-label="Поиск">
       <button type="submit" class="search-button">Найти</button>
     </form>
     <ul class="user-menu-list">
@@ -257,10 +257,11 @@
         длительными тест-драйвами, распаковками, а также акции,<br>
         спецпредложения и вот это вот всё.</p>
     </div>
-    <form class="subscription-form">
+    <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
       <div class="subscription-form-input-group">
-        <input type="email" placeholder="Ваш e-mail" aria-label="e-mail, на который будет приходить рассылка">
-        <button type="button">Подписаться</button>
+        <input name="email" type="email" placeholder="Ваш e-mail"
+               required aria-label="e-mail, на который будет приходить рассылка">
+        <button type="submit">Подписаться</button>
       </div>
       <span>Это бесплатно</span>
     </form>
